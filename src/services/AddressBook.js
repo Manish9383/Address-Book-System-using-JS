@@ -89,6 +89,19 @@ class AddressBook {
             let nameB = b.firstName.toLowerCase();
             return nameA.localeCompare(nameB);
         });
+    } 
+
+    sortContactsByName() {
+        return this.contacts.sort((a, b) => a.firstName.localeCompare(b.firstName));
+    }
+    sortContactsByCity() {
+        return this.contacts.sort((a, b) => a.city.localeCompare(b.city));
+    }
+    sortContactsByState() {
+        return this.contacts.sort((a, b) => a.state.localeCompare(b.state));
+    }
+    sortContactsByZip() {
+        return this.contacts.sort((a, b) => a.zip.localeCompare(b.zip));
     }
 }
 
