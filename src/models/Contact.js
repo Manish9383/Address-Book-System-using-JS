@@ -52,6 +52,7 @@ class Contact {
             throw new Error("Invalid Email Address.");
         }
     }
+    
 }
 
 module.exports = Contact;
